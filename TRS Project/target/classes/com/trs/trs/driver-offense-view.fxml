@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #e47f73;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.trs.trs.DriverOffenseController">
+    <center>
+        <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" text="TRS">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+                <Label layoutX="39.0" layoutY="59.0" text="Officer ID">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="officerIDTextField" layoutX="240.0" layoutY="59.0" prefHeight="25.0" prefWidth="175.0" promptText="Enter Your Officer ID"/>
+                <Label layoutX="39.0" layoutY="89.0" text="Name of offender">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="offenderNameTextField" layoutX="240.0" layoutY="89.0" prefWidth="175.0" promptText="Enter Full Name"/>
+                <Label layoutX="39.0" layoutY="179.0" text="Driver license #">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="driverLicenseTextField" layoutX="240.0" layoutY="179.0" prefWidth="175.0" promptText="Enter Driver's License"/>
+                <Label layoutX="39.0" layoutY="209.0" text="Driver violation type">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="driverViolationTypeTextField" layoutX="240.0" layoutY="209.0" prefWidth="175.0" promptText="Enter Violation"/>
+                <Label layoutX="39.0" layoutY="239.0" text="Additional Comments">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <TextField fx:id="additionalTextField" layoutX="240.0" layoutY="239.0" prefWidth="175.0" promptText="Enter Additional Comments"/>
+                <Label layoutX="39.0" layoutY="269.0" text="Date">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </Label>
+                <Button fx:id="cancelButton" layoutX="167.0" layoutY="337.0" mnemonicParsing="false" onAction="#cancelButtonClicked" prefHeight="39.0" prefWidth="119.0" text="Cancel">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <Button fx:id="proceedButton" layoutX="314.0" layoutY="337.0" mnemonicParsing="false" onAction="#proceedButtonClicked" prefHeight="39.0" prefWidth="119.0" text="Proceed">
+                    <font>
+                        <Font size="20.0" />
+                    </font>
+                </Button>
+                <DatePicker fx:id="dateField" layoutX="240.0" layoutY="269.0" promptText="Enter Date"/>
+            <RadioButton fx:id="yesRadioButton" layoutX="242.0" layoutY="123.0" mnemonicParsing="false" text="Yes" onAction="#yesRadio"/>
+            <Label layoutX="39.0" layoutY="119.0" text="Arrest Warrant">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="noRadioButton" layoutX="293.0" layoutY="123.0" mnemonicParsing="false" text="No" onAction="#noRadio"/>
+            </children>
+        </Pane>
+    </center>
+</BorderPane>
